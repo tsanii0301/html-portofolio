@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & Pengenalan Batik Indonesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #400a0a, #800000);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Kontainer Utama */
+        .slide-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+
+        /* Tampilan per Bagian (Lembar Halaman) */
+        .slide-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2.5rem;
+        }
+
+        .slide-title {
+            color: #800000;
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 3px solid #800000;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Bagian 1: Pengertian Batik */
+        .content-text {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #fcf1f1;
+            border-left: 5px solid #800000;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #500;
+        }
+
+        /* Bagian 2: Grid Koleksi Motif */
+        .batik-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .batik-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .batik-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .batik-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .batik-info {
+            padding: 1.2rem;
+        }
+
+        .batik-info h3 {
+            color: #800000;
+            margin-bottom: 0.4rem;
+            font-size: 1.2rem;
+        }
+
+        .batik-info p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .origin {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #800000;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        /* Bagian 3: Alasan Pelestarian Batik */
+        .reason-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .reason-card {
+            background: #fdfaf8;
+            border-top: 4px solid #800000;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        .reason-card h3 {
+            color: #800000;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .reason-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Utama -->
+    <header>
+        <h1>Warisan Budaya Nusantara</h1>
+        <p>Presentasi Digital: Pengenalan dan Portofolio Jenis Batik Indonesia</p>
+    </header>
+
+    <div class="slide-container">
+
+        <!-- BAGIAN 1: Pengertian & Penjelasan Batik -->
+        <section class="slide-section">
+            <h2 class="slide-title">Apa itu Batik Indonesia?</h2>
+            <p class="content-text">
+                <strong>Batik</strong> adalah hasil karya bangsa Indonesia yang merupakan perpaduan antara seni dan teknologi leluhur. Secara terminologi, batik merujuk pada teknik pembuatan pola atau corak di atas selembar kain menggunakan malam (lilin) sebagai bahan perintang warna melalui proses pencelupan.
+            </p>
+            <p class="content-text">
+                Kesenian batik tidak hanya sekadar kain bermotif biasa, melainkan cerminan identitas budaya serta simbol estetika tinggi yang kaya akan makna filosofis mendalam di setiap goresannya. Pada tanggal 2 Oktober 2009, UNESCO secara resmi mengukuhkan batik Indonesia sebagai Warisan Kemanusiaan untuk Budaya Lisan dan Nonbendawi.
+            </p>
+            <div class="highlight-box">
+                <strong>Fakta Singkat:</strong> Kata "batik" berasal dari bahasa Jawa <em>ambatik</em> (kain lebar) dan titik/matik, yang mencerminkan ketelatenan dalam menorehkan malam menggunakan canting.
+            </div>
+        </section>
+
+        <!-- BAGIAN 2: Portofolio Galeri Motif Batik -->
+        <section class="slide-section">
+            <h2 class="slide-title">Koleksi Motif Batik Populer</h2>
+            <p class="content-text">Berikut adalah beberapa contoh motif batik populer nusantara yang kaya akan sejarah dan filosofi:</p>
+            
+            <div class="batik-grid">
+                <!-- Batik Megamendung -->
+                <div class="batik-card">
+                    <img src="batik megamendung.jpg" onerror="this.src='batik megamendung.png'; this.onerror=function(){this.src='batik megamendung.jpeg';}" alt="Batik Megamendung">
+                    <div class="batik-info">
+                        <h3>Batik Megamendung</h3>
+                        <p>Motif khas Cirebon menyerupai awan di langit dengan gradasi warna megah, menyimbolkan ketenangan jiwa.</p>
+                        <span class="origin">Asal: Cirebon, Jawa Barat</span>
+                    </div>
+                </div>
+
+                <!-- Batik Parang -->
+                <div class="batik-card">
+                    <img src="batik parang.jpg" onerror="this.src='batik parang.png'; this.onerror=function(){this.src='batik parang.jpeg';}" alt="Batik Parang">
+                    <div class="batik-info">
+                        <h3>Batik Parang</h3>
+                        <p>Motif tertua berbentuk huruf 'S' berkesinambungan, menyimbolkan semangat perjuangan yang tidak pernah padam.</p>
+                        <span class="origin">Asal: Mataram, Yogyakarta</span>
+                    </div>
+                </div>
+
+                <!-- Batik Kawung -->
+                <div class="batik-card">
+                    <img src="batik kawung.jpg" onerror="this.src='batik kawung.png'; this.onerror=function(){this.src='batik kawung.jpeg';}" alt="Batik Kawung">
+                    <div class="batik-info">
+                        <h3>Batik Kawung</h3>
+                        <p>Terinspirasi dari irisan buah kolang-kaling geometris empat sisi, melambangkan keadilan, keagungan, dan umur panjang.</p>
+                        <span class="origin">Asal: Yogyakarta & Jawa Tengah</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN 3: Mengapa Batik Perlu Dilestarikan -->
+        <section class="slide-section">
+            <h2 class="slide-title">Mengapa Batik Perlu Dilestarikan?</h2>
+            <p class="content-text">
+                Batik bukan sekadar pakaian. Ia adalah cara masyarakat mencatat nilai hidup.
+            </p>
+            
+            <div class="reason-grid">
+                <!-- Poin 1: Identitas -->
+                <div class="reason-card">
+                    <h3>Identitas</h3>
+                    <p>Motif menandai daerah asal dan status pemakainya.</p>
+                </div>
+
+                <!-- Poin 2: Keterampilan -->
+                <div class="reason-card">
+                    <h3>Keterampilan</h3>
+                    <p>Membatik tulis butuh ketelatenan berminggu-minggu untuk satu kain.</p>
+                </div>
+
+                <!-- Poin 3: Ekonomi -->
+                <div class="reason-card">
+                    <h3>Ekonomi</h3>
+                    <p>Ribuan perajin dan pelaku usaha kecil hidup dari industri batik.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Portofolio Jenis Batik Indonesia. Disusun untuk Tugas Pemrograman Web.</p>
+    </footer>
+
+</body>
+</html>
